@@ -31,6 +31,8 @@ ejecutarse por orden.
 | `tsv/` | Tablas intermedias y de resultados |
 | `plots/` | Figuras |
 | `contaminacion/` | Clasificación de origen de los géneros vía NCBI BioSample |
+| `exported-tree/` | árbol filogenetico|
+
 
 ## Decisiones metodológicas
 
