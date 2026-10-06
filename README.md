@@ -19,7 +19,7 @@ El análisis usa las 134 muestras con datos de dieta disponibles (15 especies).
 
 ## Uso
 
-El pipeline completo está documentado en `metag_16s_v2.qmd`, que debe
+El pipeline completo está documentado en `metag_16s_v2.md`, que debe
 ejecutarse por orden.
 
 ## Estructura
