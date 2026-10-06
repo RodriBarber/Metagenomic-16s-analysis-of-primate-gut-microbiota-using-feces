@@ -1,0 +1,136 @@
+sample-id	alias	host_species	TrophicGuild	Carn	frug_idx	fol_idx	ins_idx	Ethanol
+#q2:types	categorical	categorical	categorical	numeric	numeric	numeric	numeric	numeric
+ERR2124852	AC622	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124853	AC668	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124854	AC673	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124855	AC674	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124856	AC679	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124857	AC680	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124858	AC683	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124859	AC684	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124860	AC685	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124861	AC691	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124862	AC693	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124863	AC711	Alouatta caraya	Folivore-frugivore	0	0.4	0.6	0	2
+ERR2124864	APAL36	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124865	APAL37	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124866	APAL38	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124867	APAL39	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124884	Apalw10	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124885	Apalw13	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124886	Apalw14	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124887	Apalw19	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124888	Apalw20	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124889	Apalw23	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124890	Apalw8	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124891	Apalw9	Alouatta palliata	Folivore-frugivore	0	0.4	0.6	0	1
+ERR2124892	Asen1013	Alouatta seniculus	Folivore-frugivore	0	0.4	0.6	0	
+ERR2124893	Asen1019	Alouatta seniculus	Folivore-frugivore	0	0.4	0.6	0	
+ERR2124894	Asen1111	Alouatta seniculus	Folivore-frugivore	0	0.4	0.6	0	
+ERR2124895	Asen1118	Alouatta seniculus	Folivore-frugivore	0	0.4	0.6	0	
+ERR2124896	Asen685	Alouatta seniculus	Folivore-frugivore	0	0.4	0.6	0	
+ERR2124897	AsenLink1	Alouatta seniculus	Folivore-frugivore	0	0.4	0.6	0	
+ERR2124898	AsenLink2	Alouatta seniculus	Folivore-frugivore	0	0.4	0.6	0	
+ERR2124899	AsenLink3	Alouatta seniculus	Folivore-frugivore	0	0.4	0.6	0	
+ERR2124900	AsenLink4	Alouatta seniculus	Folivore-frugivore	0	0.4	0.6	0	
+ERR2124901	AsenLink5	Alouatta seniculus	Folivore-frugivore	0	0.4	0.6	0	
+ERR2124902	AtbelzLink1	Ateles belzebuth	Frugivore	0.2	0.6	0.1	0.1	
+ERR2124903	AtbelzLink2	Ateles belzebuth	Frugivore	0.2	0.6	0.1	0.1	
+ERR2124904	AtbelzLink3	Ateles belzebuth	Frugivore	0.2	0.6	0.1	0.1	
+ERR2124905	AtbelzLink4	Ateles belzebuth	Frugivore	0.2	0.6	0.1	0.1	
+ERR2124906	AtbelzLink5	Ateles belzebuth	Frugivore	0.2	0.6	0.1	0.1	
+ERR2124992	RC2068	Cercopithecus ascanius	Omnivore	0.3	0.5	0.1	0.2	1
+ERR2124999	RT2013	Cercopithecus ascanius	Omnivore	0.3	0.5	0.1	0.2	1
+ERR2125000	RT2017	Cercopithecus ascanius	Omnivore	0.3	0.5	0.1	0.2	1
+ERR2125001	RT2019	Cercopithecus ascanius	Omnivore	0.3	0.5	0.1	0.2	1
+ERR2125002	RT2021	Cercopithecus ascanius	Omnivore	0.3	0.5	0.1	0.2	1
+ERR2125003	RT2048	Cercopithecus ascanius	Omnivore	0.3	0.5	0.1	0.2	1
+ERR2125004	RT2050	Cercopithecus ascanius	Omnivore	0.3	0.5	0.1	0.2	1
+ERR2125005	RT2135	Cercopithecus ascanius	Omnivore	0.3	0.5	0.1	0.2	1
+ERR2124907	BWC2023	Colobus guereza	Folivore	0	0.3	0.7	0	1
+ERR2124908	BWC2026	Colobus guereza	Folivore	0	0.3	0.7	0	1
+ERR2124909	BWC2061	Colobus guereza	Folivore	0	0.3	0.7	0	1
+ERR2124910	BWC2063	Colobus guereza	Folivore	0	0.3	0.7	0	1
+ERR2124911	BWC2115	Colobus guereza	Folivore	0	0.3	0.7	0	1
+ERR2124912	BWC2339	Colobus guereza	Folivore	0	0.3	0.7	0	1
+ERR2124913	BWC2341	Colobus guereza	Folivore	0	0.3	0.7	0	1
+ERR2124914	BWC2342	Colobus guereza	Folivore	0	0.3	0.7	0	1
+ERR2124915	ERUB.105M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124916	ERUB.108M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124917	ERUB.12M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124918	ERUB.13M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124919	ERUB.14M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124920	ERUB.20M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124921	ERUB.21M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124922	ERUB.33M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124923	ERUB.4M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124924	ERUB.76M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124925	ERUB.79M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124926	ERUB.98M	Eulemur rubriventer	Folivore	0	0.3	0.7	0.	1
+ERR2124927	Gor1	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124928	Gor11	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124929	Gor12	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124930	Gor2	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124931	Gor3	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124932	Gor4	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124933	Gor5	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124934	Gor6	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124935	Gor7	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124936	Gor8	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124937	Gor9	Gorilla gorilla	Folivore	0	0.1	0.9	0	2
+ERR2124963	Lc155	Lemur catta	Frugivore	0	0.8	0.2	0	
+ERR2124964	Lc172	Lemur catta	Frugivore	0	0.8	0.2	0	
+ERR2124965	Lc23	Lemur catta	Frugivore	0	0.8	0.2	0	
+ERR2124966	Lc259	Lemur catta	Frugivore	0	0.8	0.2	0	
+ERR2124967	Lc268	Lemur catta	Frugivore	0	0.8	0.2	0	
+ERR2124968	Lc301	Lemur catta	Frugivore	0	0.8	0.2	0	
+ERR2124969	Lc316	Lemur catta	Frugivore	0	0.8	0.2	0	
+ERR2124970	Lc318	Lemur catta	Frugivore	0	0.8	0.2	0	
+ERR2124971	Lc331	Lemur catta	Frugivore	0	0.8	0.2	0	
+ERR2124972	Lc336	Lemur catta	Frugivore	0	0.8	0.2	0	
+ERR2124973	PTr14	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124980	Ptr10	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124981	Ptr11	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124982	Ptr13	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124983	Ptr15	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124984	Ptr16	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124985	Ptr17	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124986	Ptr3	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124987	Ptr4	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124988	Ptr5	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124989	Ptr6	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124990	Ptr9	Pan troglodytes	Frugivore	0.1	0.6	0.3	0.1	3
+ERR2124939	JB12	Papio anubis	Omnivore	0.5	0.2	0.3	0.1	2
+ERR2124945	JB24	Papio anubis	Omnivore	0.5	0.2	0.3	0.1	2
+ERR2124946	JB25	Papio anubis	Omnivore	0.5	0.2	0.3	0.1	2
+ERR2124949	JB28	Papio anubis	Omnivore	0.5	0.2	0.3	0.1	2
+ERR2124952	JB30	Papio anubis	Omnivore	0.5	0.2	0.3	0.1	2
+ERR2124953	JB31	Papio anubis	Omnivore	0.5	0.2	0.3	0.1	2
+ERR2124957	JB4	Papio anubis	Omnivore	0.5	0.2	0.3	0.1	2
+ERR2124938	JB1	Papio hamadryas	Folivore	0.2	0	0.8	0.1	0
+ERR2124940	JB13	Papio hamadryas	Folivore	0.2	0	0.8	0.1	0
+ERR2124941	JB15	Papio hamadryas	Folivore	0.2	0	0.8	0.1	0
+ERR2124942	JB17	Papio hamadryas	Folivore	0.2	0	0.8	0.1	0
+ERR2124943	JB18	Papio hamadryas	Folivore	0.2	0	0.8	0.1	0
+ERR2124944	JB19	Papio hamadryas	Folivore	0.2	0	0.8	0.1	0
+ERR2124947	JB26	Papio hamadryas	Folivore	0.2	0	0.8	0.1	0
+ERR2124991	RC2036	Piliocolobus badius	Folivore	0	0.2	0.8	0	
+ERR2124993	RC2071	Piliocolobus badius	Folivore	0	0.2	0.8	0	
+ERR2124994	RC2096	Piliocolobus badius	Folivore	0	0.2	0.8	0	
+ERR2124995	RC2098	Piliocolobus badius	Folivore	0	0.2	0.8	0	
+ERR2124996	RC2137	Piliocolobus badius	Folivore	0	0.2	0.8	0	
+ERR2124997	RC2138	Piliocolobus badius	Folivore	0	0.2	0.8	0	
+ERR2124998	RC2141	Piliocolobus badius	Folivore	0	0.2	0.8	0	
+ERR2124974	PVAbb	Propithecus verreauxi	Folivore	0	0.3	0.7	0	
+ERR2124975	PVLou	Propithecus verreauxi	Folivore	0	0.3	0.7	0	
+ERR2124976	PVPam	Propithecus verreauxi	Folivore	0	0.3	0.7	0	
+ERR2124977	PVPet	Propithecus verreauxi	Folivore	0	0.3	0.7	0	
+ERR2124978	PVQui	Propithecus verreauxi	Folivore	0	0.3	0.7	0	
+ERR2124979	PVRij	Propithecus verreauxi	Folivore	0	0.3	0.7	0	
+ERR2124948	JB27	Theropithecus gelada	Folivore	0	0	1	0	0
+ERR2124950	JB29	Theropithecus gelada	Folivore	0	0	1	0	0
+ERR2124951	JB3	Theropithecus gelada	Folivore	0	0	1	0	0
+ERR2124954	JB32	Theropithecus gelada	Folivore	0	0	1	0	0
+ERR2124955	JB34	Theropithecus gelada	Folivore	0	0	1	0	0
+ERR2124956	JB35	Theropithecus gelada	Folivore	0	0	1	0	0
+ERR2124958	JB8	Theropithecus gelada	Folivore	0	0	1	0	0
