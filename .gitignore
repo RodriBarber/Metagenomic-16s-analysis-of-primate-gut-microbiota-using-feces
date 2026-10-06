@@ -1,0 +1,28 @@
+# --- Datos crudos: varios GB, se redescargan del ENA (ERP104379) ---
+reads/
+
+# --- Artefactos de QIIME 2: regenerables desde reads/ con el .qmd ---
+analysis/
+*.qza
+*.qzv
+
+# --- Bases de referencia: descargables de SILVA y QIIME 2 ---
+classifiers/
+reference_DB/
+
+# --- Subcarpetas de contaminacion con miles de ficheros de NCBI ---
+contaminacion/ncbi_species_by_genus/
+contaminacion/biosample_metadata_by_species/
+contaminacion/*.gz
+
+# --- Del arbol: solo los .tsv y los ficheros de iTOL ---
+exported-tree/**/*.fasta
+exported-tree/**/*.json
+exported-tree/tree.nwk
+
+# --- Temporales ---
+*.part
+__pycache__/
+*.pyc
+.Rproj.user/
+.quarto/
