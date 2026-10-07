@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # Análisis Metagenómico de la microbiota intestinal de primates utilizando
 heces V2
+=======
+# Análisis Metagenómico de la microbiota intestinal en primates
+
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 Rodrigo Barber
 2026-01-09
 
@@ -15,7 +20,11 @@ Link:“https://www.ebi.ac.uk/ena/browser/view/ERP104379”
 
 ## Obtención de las lecturas
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 
 # Creamos el directorio de trabajo para almacenar los archivos FASTQ
 mkdir -p /data/DATA10TB/Rodri/16s_v2
@@ -29,7 +38,11 @@ Ejecutamos el script “download_16S_data.sh” para descargar los archivos
 FASTQ de las muestras de heces de primates. Archivo que esta en el disco
 data/DATA10TB/Rodri/16s_v2/reads.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Ejecutamos el script para descargar los FASTQ
 chmod +x ./reads/download_16S_data.sh
 ./reads/download_16S_data.sh
@@ -45,7 +58,11 @@ las 154 muestras de heces de primates del estudio de Amato et al, 2018.
 Comprobamos que los archivos son correctos mediante la verificación de
 los valores MD5.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Creamos un directorio para almacenar los archivos .tsv en general y descargamos el archivo de verificación de MD5 desde el ENA
 mkdir -p tsv
 curl -s "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=ERP104379&result=read_run&fields=run_accession,fastq_md5,fastq_bytes&format=tsv&limit=0" > tsv/ena_md5.tsv
@@ -74,7 +91,11 @@ et al, 2018. Esta tabla contiene información sobre las muestras, como el
 ID de la muestra, el tipo de primate del que proviene, el origen del
 tejido y otros datos relevantes. Se obtiene desde la web del ENA.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Creamos un directorio para almacenar los metadatos
 mkdir metadata
 
@@ -88,6 +109,7 @@ Creamos una tabla combinando el ID de las muestras con el nombre de la
 especie y su fenotipo alimenticio. Para ello combinamos las tablas de
 maría con la tabla de metadatos.
 
+<<<<<<< HEAD
 - sample-id
 - Especie
 - TrophicGuild
@@ -96,13 +118,27 @@ maría con la tabla de metadatos.
 - fol_idx
 - ins_idx
 - Ethanol
+=======
+-   sample-id
+-   Especie
+-   TrophicGuild
+-   Carn
+-   frug_idx
+-   fol_idx
+-   ins_idx
+-   Ethanol
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 
 Se eliminan muestras que corresponden a especies que de las que no
 disponemos de informacion sobre su fenotipo alimenticio.
 
 Lagothrix lagotricha Alouatta pigra Ateles hybridus Alouatta palliata
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 cd /data/DATA10TB/Rodri/16s_v2/reads
 
 ids=(ERR2124868 ERR2124869 ERR2124870 ERR2124871 ERR2124872 ERR2124873
@@ -131,7 +167,11 @@ Ahora hacemos el archivo manifiesto, que es un archivo .tsv que contiene
 la información de las muestras y sus correspondientes archivos FASTQ.
 Este archivo es necesario para poder procesar los datos con QIIME2.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 cd ./metadata
 
 # Creamos el archivo manifiesto
@@ -155,7 +195,11 @@ Para la tabla de metadatos, se ha creado un archivo .tsv con la
 información de las muestras y sus correspondientes archivos FASTQ. Este
 archivo es necesario para poder procesar los datos con QIIME2.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -179,7 +223,11 @@ Se procede a dectectar la presencia del primer 515F en las lecturas.
 Solo se busca el primer fw porque el rv no esta presente en las
 lecturas. Es un estudio single-end.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -213,7 +261,11 @@ depositadas en el ENA ya no contienen los primers de amplificación.
 
 ## Resumen de la calidad de las secuencias
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -243,7 +295,11 @@ base de las lecturas, que es la única quyo score disminuye de Q15.
 Además se procede al filtrado de calidad, denoising y eliminacón de las
 quimeras de PCR por dada2.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -269,7 +325,11 @@ indica que mantenemos una cantidad adecuada de lecturas (entre 15k y
 A continuación, creamos una tabla con la distribución de las secuencias
 y de las ASVs asociadas a cada muestra.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -296,7 +356,11 @@ algunas muestras que presentan una diversidad más elevada.
 
 ## Mapa de los ids de las ASVs y sus secuencias
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -321,7 +385,11 @@ descarta las ASVs presentes en un único individuo y delega la
 eliminación del ruido de baja frecuencia al posterior filtrado por
 abundancia.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -346,7 +414,11 @@ abundancia y prevalenica con el scriprt “Plot_hist_freq_vs_prev.py” y el
 script “plot_thresholds_comparison.py” para determinar el umbral de
 abundancia a usar en el filtrado.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -369,7 +441,11 @@ umbral del 0.01%, que corresponde con un umbral de 374 reads. Por lo que
 de 6.197 ASVs totales, se eliminan 4197 y sobreviven 2000 (se mantienen
 un 32% de las ASVs totales).
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -398,7 +474,11 @@ Para la anotación taxonómica se usa un clasificador pre-entrenado de
 clasificador ha sido entrenado con secuencias de referencia de SILVA y
 permite asignar taxonomía a las ASVs obtenidas en el análisis.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -433,7 +513,11 @@ género.
 
 ## Filtrado de las ASVs por mitocondria y cloroplastos
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -458,7 +542,11 @@ procesos de filtrado a 20k. Con un max en 63k y un min en 12k.
 
 ## Actualización de la taxonomía tras el filtrado por mitocondria y cloroplastos
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -473,7 +561,11 @@ Identificamos el % reads mapeadas a cada nivel taxonomico. Para ello
 exportamos la tabla de frecuencias de las ASVs filtradas por mitocondria
 y cloroplastos y ejecutamos el script de Python “percent_mapped.py”.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -502,7 +594,11 @@ composición taxonómica de la microbiota intestinal de los primates.
 
 # Construcción del árbol filogenético
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 conda activate rachis-qiime2-2026.7
 
@@ -530,7 +626,11 @@ En primer lugar se comprueba que todas las ASVs han sido insertadas
 correctamente en el árbol filogenético. Para ello, se exporta el archivo
 “placements.json” y se cuenta el número de ASVs insertadas.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 conda activate rachis-qiime2-2026.7
 
@@ -566,14 +666,22 @@ legan a nivel de género. Si hay generos duplicados, se procede a
 eliminar las ASVs duplicadas por género, manteniendo solo una ASV por
 género. Para ello, usamos un script de Python “fix_asvs_dups.py”.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Ejecutamos el script de Python para eliminar las ASVs duplicadas por género
 python3 ./python/fix_asvs_dups.py
 ```
 
 ## Construcción de un árbol filogenético sin duplicados por género
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 conda activate rachis-qiime2-2026.7
 
@@ -594,7 +702,11 @@ mantener solo las ASVs de interes. Además, se genera un archivo de
 etiquetas para iTOL con los nombres de las secuencias correspondientes
 al género.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 conda activate rachis-qiime2-2026.7
 
@@ -621,7 +733,11 @@ composición de la microbiota, se genera un archivo de presencia/ausencia
 o de abundancia relativa de ASVs por especie. Para ello, se usa un
 script de Python que genera un archivo compatible con iTOL.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Abundancia de ASVs por género
 python3 ./python/plot_tree_abundaces.py
 
@@ -637,7 +753,11 @@ relación entre el número de secuencias muestreadas y el número de ASVs
 observadas. Como valor de profundidad máxima se utiliza el valor de la
 mediana de secuencias por muestra, que es de 20k.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
@@ -666,7 +786,11 @@ evaluar la biodiversidad de las muestras y la similitud entre ellas.
 Para ello se utiliza el método de remuestreo (bootstrapping) con 10
 iteraciones y un tamaño de muestra de 9k secuencias por muestra.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
@@ -698,7 +822,11 @@ una buena consistencia entre las réplicas biológicas.
 
 ## Barplot completo
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 eval "$(conda shell.bash hook)"
 conda activate rachis-qiime2-2026.7
@@ -718,7 +846,11 @@ rerpresentando los 20 géneros mas abundantes. Para eso se usa el script
 
 ## Barplot a nivel de género
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de QIIME2
 python3 python/plot_genus_barplot.py
 ```
@@ -730,7 +862,11 @@ nivel de genero. Para ello se clusterizan tanto las sp de primates como
 los géneros bacterianos. Representandose los 20 géneros más abundantes.
 Para ello se usa el script “heatmap_clustered.py”.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 
 # Activamos el entorno de conda
 conda activate python
@@ -746,7 +882,11 @@ identificar los géneros bacterianos que pueden ser contaminantes
 ambientales. En primer lugar se identifican los géneros bacterianos
 únicos presentes en las muestras.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Ejecutamos el script de Python para identificar los géneros bacterianos únicos presentes en las muestras
 python3 python/unique_genera.py
 
@@ -771,7 +911,11 @@ NCBI para obtener el número de especies que corresponden a cada género y
 reporta si ha sido posible encontrar el género en NCBI (el clasificador
 es de SILVA y pueden existir discrepancias con la taxonomia de NCBI)
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -815,10 +959,17 @@ varios TaxIDs). Estos dos géneros son “Morganella” y “Schwartzia”.
 Chequeamos en el NCBI estos géneros para ver si existe alguna
 discrepancia y seleccionar el TaxId adecuado.
 
+<<<<<<< HEAD
 - Morganella: 108061,90690,581
 - Schwartzia: 164984,55506
 
 ``` {bash}
+=======
+-   Morganella: 108061,90690,581
+-   Schwartzia: 164984,55506
+
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -849,7 +1000,11 @@ Schwartzia, con el TaxID 55506. Esto se debe a que en ambos casos, el
 TaxID seleccionado es el único que corresponde al dominio de bacterias.
 Para arreglar la tabla, a continuación se ejecuta el siguiente codigo.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -868,7 +1023,11 @@ quiza se deba a la homonimia entre reinos de diferentes bases de datos.
 A continuación para cada género creamos una tabla con el número de
 especies y su TaxID en NCBI.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -879,7 +1038,11 @@ python3 python/download_ncbi_species_by_genus.py
 Finalmente combinamos todas esas tablas en una sola tabla con toda la
 información de las especies por género.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -947,7 +1110,11 @@ PY
 Para cada género se cuenta el número de Biosamples que estan disponibles
 en NCBI.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -959,7 +1126,11 @@ A continuación, para todos esos generos con información de biosamples,
 se ejecuta el script “download_ncbi_species_by_genus.py”, que recopila
 los metadatos de cada biosamples de cada especie.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -970,7 +1141,11 @@ python3 python/download_ncbi_species_by_genus.py # crea la carpeta "contaminacio
 Finalmente, se combinan todos los metadatos de los biosamples en una
 sola tabla.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -986,7 +1161,11 @@ principales. Para ello se utiliza el archivo
 “isolation_source_classification.tsv” que contiene todas las categorias
 del NCBI y su clasificación.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -998,6 +1177,7 @@ python3 python/build_species_environment_tables.py # crea "ncbi_species_environm
 Finalmente, para que sea lo más informativo posible, se agrupan todas
 las categorias en 4 grandes grupos:
 
+<<<<<<< HEAD
 - Gut –\> gut/heces
 - Contaminante –\> suelo/agua/sedimento/planta/alimento
 - Animal –\> other_animal
@@ -1005,6 +1185,15 @@ las categorias en 4 grandes grupos:
 - unknown –\> origen desconocido
 
 ``` {bash}
+=======
+-   Gut –\> gut/heces
+-   Contaminante –\> suelo/agua/sedimento/planta/alimento
+-   Animal –\> other_animal
+-   other –\> otras categorias
+-   unknown –\> origen desconocido
+
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -1020,7 +1209,11 @@ desviación estandar. De esta forma se podrá identificar los géneros
 bacterianos que tienen un origen ambiental predominante y que por lo
 tanto pueden ser considerados como contaminantes ambientales.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -1035,7 +1228,11 @@ Como se ha observado que existen muchos biosamples con origen
 desconocido, se decide recalcular las estadísticas excluyendo los
 biosamples con origen desconocido.
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -1047,7 +1244,11 @@ python3 python/recalculate_percentages_excluding_unknown.py
 
 ## Visualización de los resultados
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -1060,7 +1261,11 @@ python3 python/plot_mean_sd_distributions.py
 
 ## Identificacion de géneros bacterianos contaminantes
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -1081,7 +1286,11 @@ contaminantes ambientales.
 
 # HeatMap completo con la información de los géneros bacterianos contaminantes y no contaminantes
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
@@ -1091,7 +1300,11 @@ python3 python/heatmap_clustered_all_samples.py
 
 # Abundancia relativa de los géneros bacterianos contaminantes a lo latgo de las muestars
 
+<<<<<<< HEAD
 ``` {bash}
+=======
+``` bash
+>>>>>>> cc340b6b9c1be919f536bc017d9d8f4dbbaa14d4
 # Activamos el entorno de conda
 conda activate python
 
