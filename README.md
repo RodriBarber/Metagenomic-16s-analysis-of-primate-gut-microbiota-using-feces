@@ -1,46 +1,43 @@
-# Análisis metagenómico 16S de microbiota intestinal de primates
+# 16S Metagenomic Analysis of Primate Gut Microbiota
 
-Reanálisis de los datos de amplicón 16S rRNA (región V4, single-end) de
+Reanalysis of 16S rRNA amplicon data (V4 region, single-end) from
 [Amato et al. 2019, *ISME J*](https://doi.org/10.1038/s41396-018-0175-0),
-con dos objetivos: caracterizar la composición taxonómica de la microbiota
-fecal de 15 especies de primates y evaluar la presencia de contaminación
-ambiental.
+with two objectives: to characterize the taxonomic composition of the
+fecal microbiota of 15 primate species and to assess the presence of
+environmental contamination.
 
-## Datos
+## Data
 
-154 muestras del proyecto ENA [ERP104379](https://www.ebi.ac.uk/ena/browser/view/ERP104379).
-No se incluyen en el repositorio: descárgalas con `python/download_16S_data.sh`.
-El análisis usa las 134 muestras con datos de dieta disponibles (15 especies).
+154 samples from the ENA project [ERP104379](https://www.ebi.ac.uk/ena/browser/view/ERP104379).
+Not included in the repository: download them using `python/download_16S_data.sh`.
+The analysis uses the 134 samples with available dietary data (15 species).
 
-## Requisitos
+## Requirements
 
-- QIIME 2 (entorno `rachis-qiime2-2026.7`)
-- Python 3 con pandas, matplotlib, seaborn, scipy, biopython
+- QIIME 2 (`rachis-qiime2-2026.7` environment)
+- Python 3 with pandas, matplotlib, seaborn, scipy, biopython
 
-## Uso
+## Usage
 
-El pipeline completo está documentado en `metag_16s_v2.md`, que debe
-ejecutarse por orden.
+The complete pipeline is documented in `metag_16s_v2.md`, which must
+be run in order.
 
-## Estructura
+## Structure
 
-| Carpeta | Contenido |
+| Folder | Contents |
 |---|---|
-| `python/` | Scripts de análisis y figuras |
-| `metadata/` | Tabla de muestras, especies e índices de dieta |
-| `tsv/` | Tablas intermedias y de resultados |
-| `plots/` | Figuras |
-| `contaminacion/` | Clasificación de origen de los géneros vía NCBI BioSample |
-| `exported-tree/` | árbol filogenetico|
+| `python/` | Analysis scripts and figures |
+| `metadata/` | Table of samples, species, and diet indices |
+| `tsv/` | Intermediate and results tables |
+| `plots/` | Figures |
+| `contaminacion/` | Classification of genus origin via NCBI BioSample |
+| `exported-tree/tree_v2` | Phylogenetic tree |
 
 
-## Decisiones metodológicas
+## Methodological Decisions
 
-- Filtrado por prevalencia: ≥2 muestras (los grupos más pequeños tienen 5
-  individuos; un umbral porcentual excluiría la señal específica de
-  hospedador).
-- Filtrado por abundancia: 0.01% del total de lecturas.
-- Clasificador: SILVA 144 V4-515f-806r. Incluye el rango reino, por lo que
-  en `qiime taxa collapse` el nivel 6 es FAMILIA y el 7 GÉNERO.
-- Las etiquetas no informativas de SILVA (`uncultured`, `Incertae_Sedis`)
-  no cuentan como asignación.
+- Prevalence filter: ≥2 samples
+- Abundance filter: 0.01% of total reads.
+- Filtering out mitochondria and chloroplasts
+- Taxonomic classifier: SILVA 144 V4-515f-806r.
+- Identification of contaminating genera based on the mean and standard deviation of the percentage of species assigned to each biosample by genus
