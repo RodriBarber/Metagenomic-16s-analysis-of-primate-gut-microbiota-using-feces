@@ -1,4 +1,4 @@
-# 16S Metagenomic Analysis of Primate Gut Microbiota
+# 16S Metagenomic Analysis of Primate Gut Microbiota: characterization of contaminating bacteria as an indicator of freshness
 
 Reanalysis of 16S rRNA amplicon data (V4 region, single-end) from
 [Amato et al. 2019, *ISME J*](https://doi.org/10.1038/s41396-018-0175-0),
