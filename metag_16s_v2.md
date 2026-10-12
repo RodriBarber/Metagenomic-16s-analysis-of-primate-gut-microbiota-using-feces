@@ -1,4 +1,4 @@
-# Análisis Metagenómico 16S de la microbiota intestinal de primates 
+# Análisis Metagenómico del 16S de la composición bacteriana en heces de primates para la caracterización de bacterias contaminantes como indicador de frescura
 Rodrigo Barber
 2026-01-09
 
