@@ -28,7 +28,7 @@ be run in order.
 |---|---|
 | `python/` | Analysis scripts and figures |
 | `metadata/` | Table of samples, species, and diet indices |
-| `env/` | required environments |
+| `env/` | Required environments |
 | `tsv/` | Intermediate and results tables |
 | `plots/` | Figures |
 | `contaminacion/` | Classification of genus origin via NCBI BioSample |
