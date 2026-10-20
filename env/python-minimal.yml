@@ -1,0 +1,8 @@
+name: python
+channels:
+  - defaults
+dependencies:
+  - biopython
+  - python=3.11
+  - matplotlib
+prefix: /home/rbarber/.conda/envs/python

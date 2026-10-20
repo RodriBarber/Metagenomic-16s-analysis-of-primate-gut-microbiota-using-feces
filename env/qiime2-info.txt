@@ -1,0 +1,47 @@
+System versions
+Python version: 3.12.13
+Parsl version: 2026.2.23
+rachis release: 2026.7
+rachis version: 2026.7.0
+q2cli version: 2026.7.0
+
+Installed plugins
+alignment: 2026.7.0
+boots: 2026.7.0
+composition: 2026.7.0
+cutadapt: 2026.7.0
+dada2: 2026.7.0
+deblur: 2026.7.0
+demux: 2026.7.0
+diversity: 2026.7.0
+diversity-lib: 2026.7.0
+emperor: 2026.7.0
+feature-classifier: 2026.7.0
+feature-table: 2026.7.0
+fondue: 2026.7.0
+fragment-insertion: 2026.7.0
+kmerizer: 2026.7.0
+longitudinal: 2026.7.0
+metadata: 2026.7.0
+phylogeny: 2026.7.0
+quality-control: 2026.7.0
+quality-filter: 2026.7.0
+rescript: 2026.7.0
+sample-classifier: 2026.7.0
+stats: 2026.7.0
+taxa: 2026.7.0
+types: 2026.7.0
+vizard: 2026.7.0
+vsearch: 2026.7.0
+
+Application config directory
+/data/DATA10TB/programas/miniconda3/envs/rachis-qiime2-2026.7/var/q2cli
+
+Config
+Config Source: /data/DATA10TB/programas/miniconda3/envs/rachis-qiime2-2026.7/etc/qiime2_config.toml
+
+Getting help
+To find help and learning resources, visit https://qiime2.org.
+To get help with configuring and/or understanding QIIME 2 parallelization, visit https://use.qiime2.org/en/stable/references/parallel-configuration.html
+
+
