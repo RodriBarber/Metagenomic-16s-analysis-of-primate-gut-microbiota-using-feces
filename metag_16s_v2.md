@@ -1088,7 +1088,7 @@ conda activate python
 python3 python/heatmap_clustered_all_samples.py
 ```
 
-# Abundancia relativa de los géneros bacterianos contaminantes a lo latgo de las muestras
+# Abundancia relativa de los géneros bacterianos contaminantes a lo largo de las muestras
 
 ``` bash
 # Activamos el entorno de conda
